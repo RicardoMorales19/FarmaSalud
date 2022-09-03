@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+	<title>CARRITO</title>
+	<link rel="stylesheet" type="text/css" href="css/carrito.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<div class="tituloPrincipalDeLaPagina">
+				<img src="images/LogoS.png" alt="Logo">
+				<h1 class="estiloParaH1">FarmaSalud<br>Carrito de Compras</h1>
+			</div>
+		</header>
+
+		<main>
+			<div class="estiloPantallaPrincipal">
+
+				<div class="estiloParaElContenido">
+					<div class='contenedorDeElementos'>  
+						<div class="estiloParaLosElementos">
+							<fieldset>
+								<h2>Datos de Facturación</h2><br>
+								<form action="#">
+									<label for="nit">NIT:     </label>
+									<input type="text" id="nit" name="nit" placeholder="Ingrese el NIT" maxlength="15" autocomplete="off" required><br>
+									<label for="name">Nombre:  </label>
+									<input type="text" id="name" name="name" placeholder="Ingrese el nombre" maxlength="20" autocomplete="off" required><br>
+									<label for="direccion">Direccion de entrega:  </label>
+									<input type="text" id="direccion" name="direccion" placeholder="Ingrese la direccion de entrega" maxlength="150" autocomplete="off" required><br>
+									<input onclick="finalizarPedido();" type="submit" value="Finalizar pedido">
+								</form> 
+							</fieldset>
+		
+							<table class="table table-bordered table-striped">
+		
+								<thead>
+										
+									<tr>
+										<th>CODIGO</th>
+										<th>DESCRIPCION</th>
+										<th>CANTIDAD</th>
+										<th>PRECIO</th>
+										<th>TOTAL</th>
+											
+									</tr>
+										
+								</thead>
+		
+								<tbody id="detalleDelPedido">
+								</tbody>
+		
+							</table>
+		
+							<br><br>
+							<label for="total"> <b> TOTAL DE SU PEDIDO: </b> </label>
+							<label id="total" name="total">20.5</label>
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+	</div>
+
+	<footer>
+		<div class="aparienciaParaElPieDeLaPagina">
+		
+			<p>
+				10 Avenida, Local 6 "A" 3-47 Zona 10<br>
+				Ciudad de Guatemala <br>
+				&copy; FarmaSalud 2022 - Todos los Derechos Reservados <br>
+				Contáctenos: tufarmacia@farmasalud.com
+			</p>
+		</div>
+	</footer>
+
+</body>
+
+	<script src="js/carrito.js"></script>
+	<script type="text/javascript">
+		IniciarProductosAutomaticamente();
+	</script>
+</html>

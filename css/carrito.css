@@ -1,0 +1,155 @@
+:root {
+    --colorDeTexto: #0093E9;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+  
+body {
+    color: var(--colorDeTexto);
+    background: #000;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+table {
+    width: 100%;
+    border: 1px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+header img{
+    width: 80px;
+}
+  
+th{
+    background-color: d2d2d2;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+th, td{
+    border: 1px solid black;
+    padding: 20px;
+}
+  
+tr:nth-child(even){
+    background-color: d2d2d2;
+}
+  
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+fieldset{
+    padding: 10px;
+}
+  
+h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'sans-serif';
+}
+  
+h2 {
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'sans-serif';
+}
+  
+h3 {
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    font-family: 'sans-serif';
+}
+  
+p{
+font-family: 'sans-serif';
+}
+  
+a{
+    color: white;
+    font-family: 'sans-serif';
+}
+  
+a:hover {
+    color: cyan;
+}
+  
+span {
+    font-family: 'sans-serif';
+}
+  
+ul {
+    color: red;
+    font-family: 'sans-serif';
+}
+  
+ul li::after {
+    color: red;
+}
+  
+.estiloPantallaPrincipal{
+    padding: 1% 3%;
+}
+  
+.estiloParaElContenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.estiloParaLosElementos{
+  padding: 5%;
+}
+
+.contenedorDeElementos{
+    width: 100%;
+}
+  
+.tituloPrincipalDeLaPagina{
+    text-align: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
+    padding: 1%;
+}
+  
+.aparienciaParaElHeader{
+    text-align: center;
+    background-color: #000;
+    padding: 10%;
+}
+  
+.aparienciaParaElPieDeLaPagina{
+    font-size: 12px;
+    padding: 20px 0 40px 0;
+    color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);;
+}
